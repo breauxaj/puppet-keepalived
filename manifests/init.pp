@@ -1,5 +1,5 @@
 class keepalived {
-  $required = $operatingsystem ? {
+  $required = $::operatingsystem ? {
     /(?i-mx:centos|fedora|redhat|scientific)/ => 'keepalived',
   }
 
